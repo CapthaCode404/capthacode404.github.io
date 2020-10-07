@@ -1,0 +1,272 @@
+.index {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+form {
+  width: 100%;
+}
+.nav-item {
+  margin-right: 30px;
+  font-weight: 500;
+}
+
+.team {
+  font-size: 55px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+}
+
+.navbar-brand {
+  margin-left: 115px;
+  font-weight: 700;
+  font-size: 25px;
+  font-family: "Nunito", sans-serif;
+}
+
+.navbar-nav {
+  margin-right: 150px;
+}
+
+.gambar {
+  margin-left: 50px;
+}
+
+.unggul {
+  font-size: 55px;
+  font-weight: 500;
+  font-family: "Nunito", sans-serif;
+}
+
+.mitra {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Muli");
+
+/* * {
+        box-sizing: border-box;
+        font-family: "Muli", sans-serif;
+      }
+      html,
+      body,
+      .block {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        min-width: 500px;
+        overflow: hidden;
+      } */
+/* .four {
+      width: 250px;
+      height: 50px;
+      margin: 20px 0px 20px 40%;
+      background-size: cover;
+      background: url("http://www.foursites.nl/static/img/logo.svg") no-repeat center center;
+    } */
+
+.left {
+  flex: 1;
+  z-index: 1;
+  background: #efeff4;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-image: url("http://mcatc.org/wp-content/uploads/2018/09/red-curtain-theater-plain-ideas.jpg");
+}
+
+.right {
+  flex: 1;
+  z-index: 1;
+  height: 100%;
+  background-size: cover;
+  background-image: url("http://mcatc.org/wp-content/uploads/2018/09/red-curtain-theater-plain-ideas.jpg");
+}
+
+#Laag_1 {
+  z-index: 12;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 46.3%;
+  cursor: pointer;
+}
+
+.open {
+  animation-name: spin;
+  animation-duration: 100ms;
+  animation-iteration-count: 5;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sliderleft {
+  animation-name: slideleft;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes slideleft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.sliderright {
+  animation-name: slideright;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes slideright {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+#container {
+  width: auto;
+  height: auto;
+  -webkit-perspective: 800px;
+  perspective: 800px;
+  text-align: center;
+  z-index: 0;
+  margin-bottom: 100px;
+  margin-top: 200px;
+}
+
+.profil {
+  margin: 10px;
+  display: inline-block;
+  position: relative;
+  width: 220px;
+  height: 260px;
+  opacity: 0.85;
+}
+
+.front,
+.back {
+  font-weight: 500;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  border-radius: 5px;
+}
+
+.front {
+  transform: rotateY(0deg);
+  background: #ffffff;
+  text-align: center;
+  padding: 30px;
+}
+
+.back {
+  background: #007bff;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  padding: 40px 15px;
+  color: #fff;
+}
+
+.profil:hover .front {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.profil:hover .back {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+/* //styling */
+.back .contact {
+  height: 90%;
+  width: 100%;
+  border: 5px solid white;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.front .contact {
+  height: 120px;
+  width: 120px;
+  border: 5px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.front .name {
+  display: inline-block;
+  font-size: 18px;
+  color: #000000;
+}
+
+.front .job {
+  color: #000000;
+}
+
+.front hr {
+  border: none;
+  color: #007bff;
+  border: 1px solid;
+}
+.kontak {
+  background-color: #f7f7f7;
+}
+@media only screen and (max-width: 425px) {
+  .team {
+    font-size: 25px;
+    width: 90vw;
+    font-weight: bold;
+    margin-top: 150px;
+    font-family: "Nunito", sans-serif;
+  }
+
+  .gambar {
+    /* display: none; */
+    width: 350px;
+    height: 200px;
+    margin-left: -200px;
+    margin-top: -50px;
+    opacity: 0.9;
+  }
+
+  .index p {
+    width: 90vw;
+  }
+
+  .navbar-brand {
+    margin-left: 15px;
+  }
+}
